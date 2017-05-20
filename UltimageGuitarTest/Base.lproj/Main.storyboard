@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="aSW-65-tei">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Start Screen View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="StartScreenViewController" customModule="UltimageGuitarTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ap9-8y-q9J">
+                                <rect key="frame" x="94" y="233.5" width="186" height="136"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BKG-Ho-jNh" customClass="RoundCornersButton" customModule="UltimageGuitarTest" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="78" width="186" height="58"/>
+                                        <color key="backgroundColor" red="0.1333333333" green="0.4431372549" blue="0.50588235290000005" alpha="1" colorSpace="calibratedRGB"/>
+                                        <inset key="contentEdgeInsets" minX="20" minY="20" maxX="20" maxY="20"/>
+                                        <state key="normal" title="Show saved albums">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="15"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="onShowSavedAlbumsButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lKd-Of-iES"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="klt-O4-WXd" customClass="RoundCornersButton" customModule="UltimageGuitarTest" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="186" height="58"/>
+                                        <color key="backgroundColor" red="1" green="0.90980392160000001" blue="0.41176470590000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <inset key="contentEdgeInsets" minX="20" minY="20" maxX="20" maxY="20"/>
+                                        <state key="normal" title="Search music albums">
+                                            <color key="titleColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="15"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="onSearchMusicButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PFd-NI-7c3"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="BKG-Ho-jNh" firstAttribute="top" secondItem="klt-O4-WXd" secondAttribute="bottom" constant="20" id="4s6-bc-HwK"/>
+                                    <constraint firstAttribute="trailing" secondItem="BKG-Ho-jNh" secondAttribute="trailing" id="ept-p0-iyF"/>
+                                    <constraint firstItem="klt-O4-WXd" firstAttribute="top" secondItem="ap9-8y-q9J" secondAttribute="top" id="mAQ-Cw-mwE"/>
+                                    <constraint firstAttribute="trailing" secondItem="klt-O4-WXd" secondAttribute="trailing" id="nT6-3z-kIb"/>
+                                    <constraint firstItem="klt-O4-WXd" firstAttribute="leading" secondItem="ap9-8y-q9J" secondAttribute="leading" id="sYm-oX-4dQ"/>
+                                    <constraint firstAttribute="bottom" secondItem="BKG-Ho-jNh" secondAttribute="bottom" id="ti6-am-cGr"/>
+                                    <constraint firstItem="BKG-Ho-jNh" firstAttribute="leading" secondItem="ap9-8y-q9J" secondAttribute="leading" id="xSO-6w-BDb"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ap9-8y-q9J" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ha4-5a-zyc"/>
+                            <constraint firstItem="ap9-8y-q9J" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="lFl-N1-ebs"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="K4m-1U-hOH"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1302" y="793"/>
+        </scene>
+        <!--Search Albums View Controller-->
+        <scene sceneID="HVp-VD-M9B">
+            <objects>
+                <viewController storyboardIdentifier="SearchAlbumsViewController" id="YAz-kx-U4V" customClass="SearchAlbumsViewController" customModule="UltimageGuitarTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5z1-TK-rNp"/>
+                        <viewControllerLayoutGuide type="bottom" id="sDR-Rw-sTv"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="vv9-5p-joh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Xuj-S4-eLI">
+                                <rect key="frame" x="10" y="30" width="276" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VZf-Gj-an4" customClass="RoundCornersButton" customModule="UltimageGuitarTest" customModuleProvider="target">
+                                <rect key="frame" x="296" y="30" width="69" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.90980392160000001" blue="0.41176470590000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <inset key="contentEdgeInsets" minX="5" minY="0.0" maxX="5" maxY="0.0"/>
+                                <state key="normal" title="SEARCH">
+                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="onSearchButtonPress:" destination="YAz-kx-U4V" eventType="touchUpInside" id="bQ4-QR-gQl"/>
+                                </connections>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="fae-71-xpE">
+                                <rect key="frame" x="0.0" y="70" width="375" height="597"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="YAz-kx-U4V" id="JJ5-MW-yF8"/>
+                                    <outlet property="delegate" destination="YAz-kx-U4V" id="gQU-tH-Jlq"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="VZf-Gj-an4" firstAttribute="leading" secondItem="Xuj-S4-eLI" secondAttribute="trailing" constant="10" id="0Tw-LK-eph"/>
+                            <constraint firstItem="Xuj-S4-eLI" firstAttribute="top" secondItem="5z1-TK-rNp" secondAttribute="bottom" constant="10" id="1tI-tO-zIs"/>
+                            <constraint firstItem="sDR-Rw-sTv" firstAttribute="top" secondItem="fae-71-xpE" secondAttribute="bottom" id="CGj-6K-UE7"/>
+                            <constraint firstItem="fae-71-xpE" firstAttribute="top" secondItem="Xuj-S4-eLI" secondAttribute="bottom" constant="10" id="GU8-OW-dyo"/>
+                            <constraint firstItem="fae-71-xpE" firstAttribute="leading" secondItem="vv9-5p-joh" secondAttribute="leading" id="Jrh-RD-p5q"/>
+                            <constraint firstAttribute="trailing" secondItem="fae-71-xpE" secondAttribute="trailing" id="Nw4-DU-Tmz"/>
+                            <constraint firstItem="VZf-Gj-an4" firstAttribute="height" secondItem="Xuj-S4-eLI" secondAttribute="height" id="TjV-bS-z0G"/>
+                            <constraint firstItem="VZf-Gj-an4" firstAttribute="top" secondItem="Xuj-S4-eLI" secondAttribute="top" id="XZM-vE-1C3"/>
+                            <constraint firstAttribute="trailing" secondItem="VZf-Gj-an4" secondAttribute="trailing" constant="10" id="ctv-zs-gDW"/>
+                            <constraint firstItem="Xuj-S4-eLI" firstAttribute="leading" secondItem="vv9-5p-joh" secondAttribute="leading" constant="10" id="lM6-xa-R1j"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="searchTextField" destination="Xuj-S4-eLI" id="H1w-o8-ljx"/>
+                        <outlet property="tableView" destination="fae-71-xpE" id="awJ-RJ-Rv9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qRn-HV-fGW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2383" y="519"/>
+        </scene>
+        <!--Saved Albums View Controller-->
+        <scene sceneID="ChQ-Qg-rIM">
+            <objects>
+                <viewController storyboardIdentifier="SavedAlbumsViewController" id="hLP-qJ-AdL" customClass="SavedAlbumsViewController" customModule="UltimageGuitarTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zRG-ER-M4r"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ujh-Nw-3sT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="iQe-BO-4GL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="60r-AT-at5">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="hLP-qJ-AdL" id="YsE-HI-cxK"/>
+                                    <outlet property="delegate" destination="hLP-qJ-AdL" id="FFD-ZX-Sxz"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="60r-AT-at5" firstAttribute="leading" secondItem="iQe-BO-4GL" secondAttribute="leading" id="80G-Li-J4E"/>
+                            <constraint firstAttribute="trailing" secondItem="60r-AT-at5" secondAttribute="trailing" id="Gn8-2j-Grr"/>
+                            <constraint firstItem="60r-AT-at5" firstAttribute="top" secondItem="zRG-ER-M4r" secondAttribute="bottom" id="WD5-UD-nhL"/>
+                            <constraint firstItem="Ujh-Nw-3sT" firstAttribute="top" secondItem="60r-AT-at5" secondAttribute="bottom" id="k4B-fY-eC8"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="60r-AT-at5" id="Nkw-ZM-g5o"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZT2-uD-1PH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2382" y="1171"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="LFp-GU-TYk">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="aSW-65-tei" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="1CI-68-KfW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="qwI-o0-s1h"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="h3G-DK-mXr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="205.59999999999999" y="792.95352323838085"/>
+        </scene>
+    </scenes>
+</document>

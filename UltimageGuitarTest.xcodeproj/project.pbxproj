@@ -1,0 +1,552 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DA0E40974005BB8A16A454E5 /* Pods_UltimageGuitarTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 201BCA8EEFD29380A76D9D84 /* Pods_UltimageGuitarTest.framework */; };
+		F8051F2D1ED06E6C00651996 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8051F2C1ED06E6C00651996 /* Constants.swift */; };
+		F8051F321ED0739700651996 /* UITetField+AccessoryDone.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8051F311ED0739700651996 /* UITetField+AccessoryDone.swift */; };
+		F8051F341ED0793400651996 /* Connector.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8051F331ED0793400651996 /* Connector.swift */; };
+		F8051F361ED0793F00651996 /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8051F351ED0793F00651996 /* Album.swift */; };
+		F8051F3E1ED086EA00651996 /* CDAlbum+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8051F3C1ED086EA00651996 /* CDAlbum+CoreDataClass.swift */; };
+		F8051F3F1ED086EA00651996 /* CDAlbum+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8051F3D1ED086EA00651996 /* CDAlbum+CoreDataProperties.swift */; };
+		F8051F421ED0875200651996 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8051F411ED0875200651996 /* DataManager.swift */; };
+		F805E5A91ED05F95007C16B0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F805E5A81ED05F95007C16B0 /* AppDelegate.swift */; };
+		F805E5AE1ED05F95007C16B0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F805E5AC1ED05F95007C16B0 /* Main.storyboard */; };
+		F805E5B11ED05F95007C16B0 /* UltimageGuitarTest.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F805E5AF1ED05F95007C16B0 /* UltimageGuitarTest.xcdatamodeld */; };
+		F805E5B31ED05F95007C16B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F805E5B21ED05F95007C16B0 /* Assets.xcassets */; };
+		F805E5B61ED05F95007C16B0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F805E5B41ED05F95007C16B0 /* LaunchScreen.storyboard */; };
+		F805E5C21ED05FCD007C16B0 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F805E5C11ED05FCD007C16B0 /* BaseViewController.swift */; };
+		F805E5C71ED06085007C16B0 /* StartScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F805E5C61ED06085007C16B0 /* StartScreenViewController.swift */; };
+		F805E5C91ED06179007C16B0 /* RoundCornersButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F805E5C81ED06179007C16B0 /* RoundCornersButton.swift */; };
+		F805E5CB1ED062AE007C16B0 /* SearchAlbumsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F805E5CA1ED062AE007C16B0 /* SearchAlbumsViewController.swift */; };
+		F805E5CD1ED062BA007C16B0 /* SavedAlbumsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F805E5CC1ED062BA007C16B0 /* SavedAlbumsViewController.swift */; };
+		F805E5D21ED065DE007C16B0 /* SearchResultTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F805E5D01ED065DE007C16B0 /* SearchResultTableViewCell.swift */; };
+		F805E5D31ED065DE007C16B0 /* SearchResultTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F805E5D11ED065DE007C16B0 /* SearchResultTableViewCell.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		201BCA8EEFD29380A76D9D84 /* Pods_UltimageGuitarTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UltimageGuitarTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2925350AFBC356B94C43B37B /* Pods-UltimageGuitarTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UltimageGuitarTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-UltimageGuitarTest/Pods-UltimageGuitarTest.release.xcconfig"; sourceTree = "<group>"; };
+		70C6DA74A46A8F30E7A3679D /* Pods-UltimageGuitarTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UltimageGuitarTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UltimageGuitarTest/Pods-UltimageGuitarTest.debug.xcconfig"; sourceTree = "<group>"; };
+		F8051F2C1ED06E6C00651996 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		F8051F311ED0739700651996 /* UITetField+AccessoryDone.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITetField+AccessoryDone.swift"; sourceTree = "<group>"; };
+		F8051F331ED0793400651996 /* Connector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Connector.swift; sourceTree = "<group>"; };
+		F8051F351ED0793F00651996 /* Album.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
+		F8051F3C1ED086EA00651996 /* CDAlbum+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CDAlbum+CoreDataClass.swift"; sourceTree = "<group>"; };
+		F8051F3D1ED086EA00651996 /* CDAlbum+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CDAlbum+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		F8051F411ED0875200651996 /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		F805E5A51ED05F95007C16B0 /* UltimageGuitarTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UltimageGuitarTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F805E5A81ED05F95007C16B0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F805E5AD1ED05F95007C16B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F805E5B01ED05F95007C16B0 /* UltimageGuitarTest.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = UltimageGuitarTest.xcdatamodel; sourceTree = "<group>"; };
+		F805E5B21ED05F95007C16B0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F805E5B51ED05F95007C16B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F805E5B71ED05F95007C16B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F805E5C11ED05FCD007C16B0 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		F805E5C61ED06085007C16B0 /* StartScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartScreenViewController.swift; sourceTree = "<group>"; };
+		F805E5C81ED06179007C16B0 /* RoundCornersButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundCornersButton.swift; sourceTree = "<group>"; };
+		F805E5CA1ED062AE007C16B0 /* SearchAlbumsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchAlbumsViewController.swift; sourceTree = "<group>"; };
+		F805E5CC1ED062BA007C16B0 /* SavedAlbumsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SavedAlbumsViewController.swift; sourceTree = "<group>"; };
+		F805E5D01ED065DE007C16B0 /* SearchResultTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResultTableViewCell.swift; sourceTree = "<group>"; };
+		F805E5D11ED065DE007C16B0 /* SearchResultTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchResultTableViewCell.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F805E5A21ED05F95007C16B0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA0E40974005BB8A16A454E5 /* Pods_UltimageGuitarTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		25ADF4FFC41ED7EA51BD740B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				70C6DA74A46A8F30E7A3679D /* Pods-UltimageGuitarTest.debug.xcconfig */,
+				2925350AFBC356B94C43B37B /* Pods-UltimageGuitarTest.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F0C086D13140A4089E15F549 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				201BCA8EEFD29380A76D9D84 /* Pods_UltimageGuitarTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F8051F2B1ED06E4300651996 /* Support files */ = {
+			isa = PBXGroup;
+			children = (
+				F8051F2C1ED06E6C00651996 /* Constants.swift */,
+			);
+			name = "Support files";
+			sourceTree = "<group>";
+		};
+		F8051F301ED0737F00651996 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F8051F311ED0739700651996 /* UITetField+AccessoryDone.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		F8051F371ED0867E00651996 /* CDModel */ = {
+			isa = PBXGroup;
+			children = (
+				F8051F3C1ED086EA00651996 /* CDAlbum+CoreDataClass.swift */,
+				F8051F3D1ED086EA00651996 /* CDAlbum+CoreDataProperties.swift */,
+			);
+			name = CDModel;
+			sourceTree = "<group>";
+		};
+		F8051F401ED0874600651996 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				F8051F411ED0875200651996 /* DataManager.swift */,
+			);
+			name = Managers;
+			sourceTree = "<group>";
+		};
+		F805E59C1ED05F95007C16B0 = {
+			isa = PBXGroup;
+			children = (
+				F805E5A71ED05F95007C16B0 /* UltimageGuitarTest */,
+				F805E5A61ED05F95007C16B0 /* Products */,
+				25ADF4FFC41ED7EA51BD740B /* Pods */,
+				F0C086D13140A4089E15F549 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F805E5A61ED05F95007C16B0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F805E5A51ED05F95007C16B0 /* UltimageGuitarTest.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F805E5A71ED05F95007C16B0 /* UltimageGuitarTest */ = {
+			isa = PBXGroup;
+			children = (
+				F8051F401ED0874600651996 /* Managers */,
+				F8051F2B1ED06E4300651996 /* Support files */,
+				F805E5C41ED05FFC007C16B0 /* Storyboard files */,
+				F805E5C01ED05FAE007C16B0 /* Network */,
+				F805E5BF1ED05FA9007C16B0 /* Model */,
+				F805E5BE1ED05FA6007C16B0 /* Views */,
+				F805E5BD1ED05FA0007C16B0 /* Controllers */,
+				F805E5A81ED05F95007C16B0 /* AppDelegate.swift */,
+				F805E5B21ED05F95007C16B0 /* Assets.xcassets */,
+				F805E5B71ED05F95007C16B0 /* Info.plist */,
+			);
+			path = UltimageGuitarTest;
+			sourceTree = "<group>";
+		};
+		F805E5BD1ED05FA0007C16B0 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F805E5C11ED05FCD007C16B0 /* BaseViewController.swift */,
+				F805E5C61ED06085007C16B0 /* StartScreenViewController.swift */,
+				F805E5CA1ED062AE007C16B0 /* SearchAlbumsViewController.swift */,
+				F805E5CC1ED062BA007C16B0 /* SavedAlbumsViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		F805E5BE1ED05FA6007C16B0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F8051F301ED0737F00651996 /* Extensions */,
+				F805E5CF1ED065B5007C16B0 /* TableViewCells */,
+				F805E5CE1ED065A8007C16B0 /* Base Views */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		F805E5BF1ED05FA9007C16B0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F805E5C51ED0601C007C16B0 /* Core Data */,
+				F8051F351ED0793F00651996 /* Album.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		F805E5C01ED05FAE007C16B0 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				F8051F331ED0793400651996 /* Connector.swift */,
+			);
+			name = Network;
+			sourceTree = "<group>";
+		};
+		F805E5C41ED05FFC007C16B0 /* Storyboard files */ = {
+			isa = PBXGroup;
+			children = (
+				F805E5AC1ED05F95007C16B0 /* Main.storyboard */,
+				F805E5B41ED05F95007C16B0 /* LaunchScreen.storyboard */,
+			);
+			name = "Storyboard files";
+			sourceTree = "<group>";
+		};
+		F805E5C51ED0601C007C16B0 /* Core Data */ = {
+			isa = PBXGroup;
+			children = (
+				F8051F371ED0867E00651996 /* CDModel */,
+				F805E5AF1ED05F95007C16B0 /* UltimageGuitarTest.xcdatamodeld */,
+			);
+			name = "Core Data";
+			sourceTree = "<group>";
+		};
+		F805E5CE1ED065A8007C16B0 /* Base Views */ = {
+			isa = PBXGroup;
+			children = (
+				F805E5C81ED06179007C16B0 /* RoundCornersButton.swift */,
+			);
+			name = "Base Views";
+			sourceTree = "<group>";
+		};
+		F805E5CF1ED065B5007C16B0 /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				F805E5D01ED065DE007C16B0 /* SearchResultTableViewCell.swift */,
+				F805E5D11ED065DE007C16B0 /* SearchResultTableViewCell.xib */,
+			);
+			name = TableViewCells;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F805E5A41ED05F95007C16B0 /* UltimageGuitarTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F805E5BA1ED05F95007C16B0 /* Build configuration list for PBXNativeTarget "UltimageGuitarTest" */;
+			buildPhases = (
+				BDD722DAB9B68D1C4CA01909 /* [CP] Check Pods Manifest.lock */,
+				F805E5A11ED05F95007C16B0 /* Sources */,
+				F805E5A21ED05F95007C16B0 /* Frameworks */,
+				F805E5A31ED05F95007C16B0 /* Resources */,
+				6829188401AB8F91D37DC033 /* [CP] Embed Pods Frameworks */,
+				F7536E87E9C2D99F34FEFF93 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UltimageGuitarTest;
+			productName = UltimageGuitarTest;
+			productReference = F805E5A51ED05F95007C16B0 /* UltimageGuitarTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F805E59D1ED05F95007C16B0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Nikita Smolyanchenko";
+				TargetAttributes = {
+					F805E5A41ED05F95007C16B0 = {
+						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = WTYY7STNAA;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = F805E5A01ED05F95007C16B0 /* Build configuration list for PBXProject "UltimageGuitarTest" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F805E59C1ED05F95007C16B0;
+			productRefGroup = F805E5A61ED05F95007C16B0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F805E5A41ED05F95007C16B0 /* UltimageGuitarTest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F805E5A31ED05F95007C16B0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F805E5B61ED05F95007C16B0 /* LaunchScreen.storyboard in Resources */,
+				F805E5B31ED05F95007C16B0 /* Assets.xcassets in Resources */,
+				F805E5D31ED065DE007C16B0 /* SearchResultTableViewCell.xib in Resources */,
+				F805E5AE1ED05F95007C16B0 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6829188401AB8F91D37DC033 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UltimageGuitarTest/Pods-UltimageGuitarTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BDD722DAB9B68D1C4CA01909 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F7536E87E9C2D99F34FEFF93 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UltimageGuitarTest/Pods-UltimageGuitarTest-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F805E5A11ED05F95007C16B0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F805E5CB1ED062AE007C16B0 /* SearchAlbumsViewController.swift in Sources */,
+				F8051F421ED0875200651996 /* DataManager.swift in Sources */,
+				F8051F341ED0793400651996 /* Connector.swift in Sources */,
+				F805E5CD1ED062BA007C16B0 /* SavedAlbumsViewController.swift in Sources */,
+				F805E5D21ED065DE007C16B0 /* SearchResultTableViewCell.swift in Sources */,
+				F805E5B11ED05F95007C16B0 /* UltimageGuitarTest.xcdatamodeld in Sources */,
+				F8051F3E1ED086EA00651996 /* CDAlbum+CoreDataClass.swift in Sources */,
+				F805E5A91ED05F95007C16B0 /* AppDelegate.swift in Sources */,
+				F805E5C91ED06179007C16B0 /* RoundCornersButton.swift in Sources */,
+				F805E5C21ED05FCD007C16B0 /* BaseViewController.swift in Sources */,
+				F8051F321ED0739700651996 /* UITetField+AccessoryDone.swift in Sources */,
+				F8051F3F1ED086EA00651996 /* CDAlbum+CoreDataProperties.swift in Sources */,
+				F805E5C71ED06085007C16B0 /* StartScreenViewController.swift in Sources */,
+				F8051F2D1ED06E6C00651996 /* Constants.swift in Sources */,
+				F8051F361ED0793F00651996 /* Album.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F805E5AC1ED05F95007C16B0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F805E5AD1ED05F95007C16B0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F805E5B41ED05F95007C16B0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F805E5B51ED05F95007C16B0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F805E5B81ED05F95007C16B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F805E5B91ED05F95007C16B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F805E5BB1ED05F95007C16B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 70C6DA74A46A8F30E7A3679D /* Pods-UltimageGuitarTest.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = WTYY7STNAA;
+				INFOPLIST_FILE = UltimageGuitarTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = nsm.UltimageGuitarTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		F805E5BC1ED05F95007C16B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2925350AFBC356B94C43B37B /* Pods-UltimageGuitarTest.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = WTYY7STNAA;
+				INFOPLIST_FILE = UltimageGuitarTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = nsm.UltimageGuitarTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F805E5A01ED05F95007C16B0 /* Build configuration list for PBXProject "UltimageGuitarTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F805E5B81ED05F95007C16B0 /* Debug */,
+				F805E5B91ED05F95007C16B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F805E5BA1ED05F95007C16B0 /* Build configuration list for PBXNativeTarget "UltimageGuitarTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F805E5BB1ED05F95007C16B0 /* Debug */,
+				F805E5BC1ED05F95007C16B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F805E5AF1ED05F95007C16B0 /* UltimageGuitarTest.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F805E5B01ED05F95007C16B0 /* UltimageGuitarTest.xcdatamodel */,
+			);
+			currentVersion = F805E5B01ED05F95007C16B0 /* UltimageGuitarTest.xcdatamodel */;
+			path = UltimageGuitarTest.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = F805E59D1ED05F95007C16B0 /* Project object */;
+}
